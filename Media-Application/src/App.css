@@ -5,7 +5,8 @@ body {
 /* App component*/
 .nav-and-main-container {
   display: grid;
-  grid-template-columns: 6% 94%;
+  grid-template-columns: 5% 95%;
+  max-width: 100%;
 }
 .main-container {
   height: 100vh;
@@ -39,27 +40,66 @@ body {
 
 /* Media Nav */
 
-.media-nav {
+.main-nav-container {
+  display: flex;
+  height: 100vh;
+
+  width: 4.5vw;
+  position: relative;
+}
+.nav-icons-container {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  width: 100%;
 
   justify-content: space-evenly;
   align-items: center;
+  position: relative;
+  z-index: 3;
+  background-color: black;
 }
 
+.nav-descriptions-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 180%;
+  justify-content: space-evenly;
+  align-items: start;
+  position: absolute;
+  z-index: 2;
+  background-color: black;
+  transform: translateX(-80px);
+  transition: all 1s ease-in-out;
+  padding-left: 10px;
+  box-shadow: 4px 4px 5px darkorange, 5px 5px 10px darkblue;
+}
 .icon-container {
-  height: auto;
+  height: 40px;
   width: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  padding-bottom: 5px;
+}
+
+.view-descriptions {
+  transform: translateX(60px);
+  transition: transform 1s ease-in-out;
+}
+.description-container {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 5px;
+  border-left: 2px solid white;
+  padding-left: 20px;
 }
 .icon-container:hover {
   cursor: pointer;
-  border-bottom: 2px solid white;
 }
 
 .icon-container > span {
@@ -67,25 +107,51 @@ body {
   font-size: 38px;
 }
 
+.icon-container > span:hover {
+  animation: colourChange 2s infinite linear;
+}
+
 .film-icon-container {
-  height: 45px;
+  height: 40px;
   width: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  padding-bottom: 5px;
 }
 .film-icon-container > i {
   font-size: 32px;
   color: white;
 }
 
-.film-icon-container:hover {
-  cursor: pointer;
-  border-bottom: 2px solid white;
+.film-icon-container > i:hover {
+  animation: colourChange 2s infinite linear;
 }
 
+.film-icon-container:hover {
+  cursor: pointer;
+}
+
+@keyframes colourChange {
+  0% {
+    color: rgb(246, 183, 66);
+    transform: scale(1.05);
+  }
+
+  25% {
+    color: lightblue;
+    transform: scale(1.1);
+  }
+  50% {
+    color: rgb(246, 183, 66);
+    transform: scale(1.2);
+  }
+
+  75% {
+    color: lightblue;
+    transform: scale(1.05);
+  }
+}
 /* Media Movie and Media Tv Hero section */
 
 .carousel-container {
@@ -178,7 +244,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 33px;
 }
 
 .tv-card-container,
