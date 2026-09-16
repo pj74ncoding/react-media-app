@@ -12,11 +12,13 @@ body {
   height: 100vh;
   width: 100%;
   overflow: scroll;
-  padding: 0px 35px;
+
+  overflow-x: hidden;
 }
 
 .main-container > h1 {
   color: white;
+  padding-left: 36px;
 }
 
 /* Media Header */
@@ -52,7 +54,6 @@ body {
   flex-direction: column;
   height: 100vh;
   width: 100%;
-
   justify-content: space-evenly;
   align-items: center;
   position: relative;
@@ -73,7 +74,9 @@ body {
   transform: translateX(-80px);
   transition: all 1s ease-in-out;
   padding-left: 10px;
-  box-shadow: 4px 4px 5px darkorange, 5px 5px 10px darkblue;
+  box-shadow:
+    4px 4px 5px darkorange,
+    5px 5px 10px darkblue;
 }
 .icon-container {
   height: 40px;
@@ -88,6 +91,30 @@ body {
   transform: translateX(60px);
   transition: transform 1s ease-in-out;
 }
+.cancel-description-container {
+  height: 40px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  color: white;
+  padding: 5px;
+  width: 70%;
+}
+
+.cancel-description-container > button {
+  font-size: 30px;
+  background-color: black;
+  border: none;
+}
+
+.cancel-description-container > button > span {
+    font-size: 30px;
+    color: white;
+}
+.cancel-description-container > button > span:hover {
+  cursor: pointer;
+  animation: colourChange 2s infinite linear;
+}
 .description-container {
   height: 40px;
   display: flex;
@@ -97,6 +124,10 @@ body {
   padding: 5px;
   border-left: 2px solid white;
   padding-left: 20px;
+}
+
+.description-container > p {
+  font-size: 18px;
 }
 .icon-container:hover {
   cursor: pointer;
@@ -140,7 +171,7 @@ body {
 
   25% {
     color: lightblue;
-    transform: scale(1.1);
+    transform: scale(1.1) rotate(-10deg);
   }
   50% {
     color: rgb(246, 183, 66);
@@ -149,18 +180,19 @@ body {
 
   75% {
     color: lightblue;
-    transform: scale(1.05);
+    transform: scale(1.05) rotate(10deg);
   }
 }
 /* Media Movie and Media Tv Hero section */
 
 .carousel-container {
-  height: 75vh;
+  height: 60vh;
   position: relative;
   display: flex;
   align-items: center;
   overflow: hidden;
   z-index: 1;
+  width: 97%;
 }
 
 .title-overview-container {
@@ -204,8 +236,8 @@ body {
 }
 
 .marker {
-  height: 25px;
-  width: 25px;
+  height: 18px;
+  width: 18px;
   border-radius: 50%;
 }
 .marker:hover {
@@ -234,13 +266,13 @@ body {
   color: white;
   margin-bottom: 10px;
   text-decoration: underline;
+  padding-left: 37px;
 }
 
 .media-tv-card-container,
 .media-movie-card-container {
   width: 100%;
   height: auto;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -261,6 +293,20 @@ body {
   box-shadow: 0px 3px 4px gold;
   transition: all 1s ease-in-out;
   transform: scale(1.02);
+}
+
+.star-and-average-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.star-and-average-container > span {
+  color: yellow;
+  font-size: 20px;
+}
+
+.star-and-average-container > p {
+  color: yellow;
 }
 
 .show-image,
@@ -303,7 +349,6 @@ body {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   height: auto;
-
   font-size: 14px;
 }
 
@@ -312,5 +357,64 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: yellow;
+}
+
+/* Media Footer */
+footer {
+  height: 15vh;
+  width: 100%;
+  color: white;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 1px solid darkorange;
+  background-color: rgb(22, 22, 22);
+}
+
+.footer-company-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-company-logo-container > p {
+  font-size: 18px;
+}
+
+.back-to-top-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-to-top-container > span {
+  font-size: 50px;
+}
+
+.back-to-top-container > span:hover {
+  cursor: pointer;
+  animation: colourChange 2s infinite linear;
+}
+.back-to-top-container > p {
+  color: white;
+  font-size: 18px;
+}
+.footer-link-container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-link-container > a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.footer-link-container > a:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }

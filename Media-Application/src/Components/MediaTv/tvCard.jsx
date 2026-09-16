@@ -12,7 +12,10 @@ export const TvCard = ({ show }) => {
           <div className="show-info-container">
             <h2>{show.name}</h2>
             <div className="show-rating-and-date">
-              <p>{show.vote_average}</p>
+              <div class="star-and-average-container">
+                <span className="material-symbols-outlined">star</span>
+                <p>{show.vote_average.toFixed(1)}</p>
+              </div>
               <p>{show.first_air_date}</p>
             </div>
 

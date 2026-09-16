@@ -1,31 +1,6 @@
 import { useEffect, useRef } from "react";
-
+import foxLogo from "../../images/foxhead.png";
 export const MediaNav = () => {
-  // const navIconsContainer = useRef(null);
-  // const navDescriptionContainer = useRef(null);
-
-  // useEffect(() => {
-  //   const iconsEl = navIconsContainer.current;
-  //   const descEl = navDescriptionContainer.current;
-
-  //   if (!iconsEl || !descEl) return;
-
-  //   const handleEnter = () => {
-  //     descEl.classList.add("view-descriptions");
-  //   };
-  //   const handleLeave = () => {
-  //     descEl.classList.remove("view-descriptions");
-  //   };
-
-  //   iconsEl.addEventListener("mouseenter", handleEnter);
-  //   descEl.addEventListener("mouseleave", handleLeave);
-
-  //   return () => {
-  //     iconsEl.removeEventListener("mouseenter", handleEnter);
-  //     descEl.removeEventListener("mouseleave", handleLeave);
-  //   };
-  // }, []);
-
   const navIconsContainer = useRef(null);
   const navDescriptionContainer = useRef(null);
 
@@ -37,22 +12,33 @@ export const MediaNav = () => {
       descriptionsContainer.classList.add("view-descriptions");
     };
 
-    const handleLeave = () => {
-      descriptionsContainer.classList.remove("view-descriptions");
-    };
+    // const handleLeave = () => {
+    //   descriptionsContainer.classList.remove("view-descriptions");
+    // };
     iconsContainer.addEventListener("mouseenter", handleEnter);
-    descriptionsContainer.addEventListener("mouseleave", handleLeave);
+    // descriptionsContainer.addEventListener("mouseleave", handleLeave);
 
     return () => {
       iconsContainer.removeEventListener("mouseenter", handleEnter);
-      descriptionsContainer.removeEventListener("mouseleave", handleLeave);
+      // descriptionsContainer.removeEventListener("mouseleave", handleLeave);
     };
   }, []);
 
+  const handleClose = () => {
+    const navDescription = navDescriptionContainer.current;
+    navDescription.classList.remove("view-descriptions");
+  };
   return (
     <>
       <nav className="main-nav-container">
         <section className="nav-icons-container" ref={navIconsContainer}>
+          <div className="icon-container">
+            <img
+              src={foxLogo}
+              width="40px"
+              alt="An illustration of a foxhead"
+            />
+          </div>
           <div className="icon-container">
             <span className="material-symbols-outlined">search</span>
           </div>
@@ -80,6 +66,11 @@ export const MediaNav = () => {
           className="nav-descriptions-container"
           ref={navDescriptionContainer}
         >
+          <div className="cancel-description-container">
+            <button onClick={handleClose}>
+              <span class="material-symbols-outlined">cancel</span>
+            </button>
+          </div>
           <div className="description-container">
             <p>Search</p>
           </div>

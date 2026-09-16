@@ -11,7 +11,11 @@ export const MovieCard = ({ movie }) => {
           <div className="movie-info-container">
             <h2>{movie.original_title}</h2>
             <div className="movie-rating-and-date">
-              <p>{movie.vote_average}</p>
+              <div class="star-and-average-container">
+                <span className="material-symbols-outlined">star</span>
+                <p>{movie.vote_average.toFixed(1)}</p>
+              </div>
+
               <p>{movie.release_date}</p>
             </div>
 
