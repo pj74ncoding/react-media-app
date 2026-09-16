@@ -108,8 +108,8 @@ body {
 }
 
 .cancel-description-container > button > span {
-    font-size: 30px;
-    color: white;
+  font-size: 30px;
+  color: white;
 }
 .cancel-description-container > button > span:hover {
   cursor: pointer;
@@ -251,7 +251,6 @@ body {
   display: flex;
   overflow: hidden;
   width: 100%;
-  /* transform: translateX(-50px); */
 }
 
 .carousel > img {
@@ -277,6 +276,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 33px;
+  padding-bottom: 52px;
 }
 
 .tv-card-container,
@@ -391,11 +391,16 @@ footer {
   justify-content: center;
 }
 
-.back-to-top-container > span {
-  font-size: 50px;
+.back-to-top-container > a {
+  text-decoration: none;
+  color: white;
 }
 
-.back-to-top-container > span:hover {
+.back-to-top-container > a > span {
+  font-size: 40px;
+}
+
+.back-to-top-container > a > span:hover {
   cursor: pointer;
   animation: colourChange 2s infinite linear;
 }

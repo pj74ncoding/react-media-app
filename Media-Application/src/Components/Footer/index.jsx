@@ -1,6 +1,6 @@
 import footerImage from "../../images/foxhead.png";
 
-export const MediaFooter = () => {
+export const MediaFooter = ({ headerRef }) => {
   return (
     <>
       <footer>
@@ -16,9 +16,11 @@ export const MediaFooter = () => {
         </div>
 
         <div className="back-to-top-container">
-<span class="material-symbols-outlined">
-keyboard_double_arrow_up
-</span>
+          <a href={headerRef}>
+            <span class="material-symbols-outlined">
+              keyboard_double_arrow_up
+            </span>
+          </a>
           <p>Back To Top</p>
         </div>
         <div className="footer-link-container">

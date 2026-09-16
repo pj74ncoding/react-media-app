@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 import "./App.css";
 import { MediaNav } from "./Components/Nav";
@@ -10,12 +10,14 @@ import { MediaHero } from "./Components/HeroMovie";
 import { TvHero } from "./Components/HeroTv";
 
 function App() {
+ const headerMaker = useRef(null)
+ 
   return (
     <>
       <div className="nav-and-main-container">
         <MediaNav />
         <div className="main-container">
-          <MediaHeader />
+          <MediaHeader headerRef={headerMaker}/>
           <MediaHero />
 
           <h1>Movies</h1>
@@ -27,7 +29,7 @@ function App() {
           <MediaTv category="popular" heading="Popular" />
           <MediaTv category="top_rated" heading="Top Rated" />
           <MediaTv category="on_the_air" heading="On The Air" />
-          <MediaFooter />
+          <MediaFooter headerRef={headerMaker}/>
         </div>
       </div>
     </>

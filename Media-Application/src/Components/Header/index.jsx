@@ -1,10 +1,10 @@
 import React from "react";
 import foxImage from "../../images/foxhead.png"
 
-export const MediaHeader = () => {
+export const MediaHeader = ({headerRef}) => {
   return (
     <>
-      <div className="media-header-container">
+      <div className="media-header-container" ref={headerRef}>
         {/* <img
           src="public/images/foxhead.png"
           height="150px"
