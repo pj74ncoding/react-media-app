@@ -17,7 +17,7 @@ export const MediaFooter = ({ headerRef }) => {
 
         <div className="back-to-top-container">
           <a href={headerRef}>
-            <span class="material-symbols-outlined">
+            <span className="material-symbols-outlined">
               keyboard_double_arrow_up
             </span>
           </a>

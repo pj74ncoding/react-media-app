@@ -6,12 +6,12 @@ export const MovieCard = ({ movie }) => {
           <img
             className="movie-image"
             src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-            alt={""}
+            alt={"Movie poster image"}
           />
           <div className="movie-info-container">
             <h2>{movie.original_title}</h2>
             <div className="movie-rating-and-date">
-              <div class="star-and-average-container">
+              <div className="star-and-average-container">
                 <span className="material-symbols-outlined">star</span>
                 <p>{movie.vote_average.toFixed(1)}</p>
               </div>

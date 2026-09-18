@@ -8,18 +8,21 @@ import { MediaTv } from "./Components/MediaTv";
 import { MediaHeader } from "./Components/Header";
 import { MediaHero } from "./Components/HeroMovie";
 import { TvHero } from "./Components/HeroTv";
+import { TrendingMedia } from "./Components/Trending";
 
 function App() {
- const headerMaker = useRef(null)
- 
+  const headerMaker = useRef(null);
+
   return (
     <>
       <div className="nav-and-main-container">
         <MediaNav />
         <div className="main-container">
-          <MediaHeader headerRef={headerMaker}/>
+          <MediaHeader headerRef={headerMaker} />
           <MediaHero />
 
+          <h1>Trending</h1>
+          <TrendingMedia />
           <h1>Movies</h1>
           <MediaMovies category="popular" heading="Popular" />
           <MediaMovies category="top_rated" heading="Top Rated" />
@@ -29,7 +32,7 @@ function App() {
           <MediaTv category="popular" heading="Popular" />
           <MediaTv category="top_rated" heading="Top Rated" />
           <MediaTv category="on_the_air" heading="On The Air" />
-          <MediaFooter headerRef={headerMaker}/>
+          <MediaFooter headerRef={headerMaker} />
         </div>
       </div>
     </>

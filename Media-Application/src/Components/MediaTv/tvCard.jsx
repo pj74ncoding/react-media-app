@@ -7,12 +7,12 @@ export const TvCard = ({ show }) => {
           <img
             className="show-image"
             src={`https://image.tmdb.org/t/p/w500${show.poster_path}`}
-            alt={""}
+            alt={"Tv show poster image"}
           />
           <div className="show-info-container">
             <h2>{show.name}</h2>
             <div className="show-rating-and-date">
-              <div class="star-and-average-container">
+              <div className="star-and-average-container">
                 <span className="material-symbols-outlined">star</span>
                 <p>{show.vote_average.toFixed(1)}</p>
               </div>

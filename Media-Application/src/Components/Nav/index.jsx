@@ -68,7 +68,7 @@ export const MediaNav = () => {
         >
           <div className="cancel-description-container">
             <button onClick={handleClose}>
-              <span class="material-symbols-outlined">cancel</span>
+              <span className="material-symbols-outlined">cancel</span>
             </button>
           </div>
           <div className="description-container">
