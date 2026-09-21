@@ -184,6 +184,13 @@ body {
   }
 }
 
+
+/* home-hero-section  */
+.home-hero-section {
+  width: 97%;
+  height: 60vh;
+  border: 1px solid white;
+}
 /* Trending Section */
 
 .main-carousel-container {

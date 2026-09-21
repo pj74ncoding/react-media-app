@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 
 import "./App.css";
+import { Home } from "./Components/Home";
 import { MediaNav } from "./Components/Nav";
 import { MediaFooter } from "./Components/Footer";
 import { MediaMovies } from "./Components/MediaMovies";
@@ -22,6 +23,7 @@ function App() {
           <MediaHero />
 
           <h1>Trending</h1>
+          <Home />
           <TrendingMedia />
           <h1>Movies</h1>
           <MediaMovies category="popular" heading="Popular" />
