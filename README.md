@@ -38,7 +38,7 @@ To create an improved movie and TV application with more features, building from
 - Learnt you must store your personalised API key. Stored the key in vercel
 - Learnt about setInterval() and clearSetInterval() functions to create slideshows
 - Learnt about useMemo() function to store a result. This will only run when the dependencie changes and not   every time the page re-renders
-- 
+
 
 ## Project Features
 
