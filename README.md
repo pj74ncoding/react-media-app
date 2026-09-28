@@ -48,7 +48,7 @@ To create an improved movie and TV application with more features, building from
 - A section slides out behind the nav into view with the icon names when the navbar is entered
 - A close button in the nav to slide the section with the icon names out of view
 - A Trending section to display the top 20 trending Movies and trending TV series
-- The Trendings sections have horizontal scrolling with left and right arrow buttons. The arrow buttons are only displayed when they can be interacted with.
+- The Trendings sections have horizontal scrolling with left and right arrow buttons. The arrow buttons are only displayed when they can be interacted with
 - hover effects on each movie card to display the movie rating, release date and overview
 - Click on a moviecard to go to a page with more details about that movie
 
