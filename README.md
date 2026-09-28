@@ -2,7 +2,7 @@
 
 
 
-A Media application that shows movies and TV series
+A media application that shows movies and TV series
 
 Live Demo: https://react-media-app-snowy.vercel.app/
 
