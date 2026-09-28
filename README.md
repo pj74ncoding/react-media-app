@@ -129,8 +129,6 @@ Frontend:
 
 ```bash
 cd react-media-app
-
-
 npm install
 ```
 
