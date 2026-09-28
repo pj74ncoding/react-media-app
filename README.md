@@ -74,7 +74,11 @@ To create an improved movie and TV application with more features, building from
 
 Client (Frontend)
 
+Folder Structure Example:
+
 ```
+
+
 
 2.
 
