@@ -121,9 +121,6 @@ client/
 git clone https://github.com/pj74ncoding/react-media-app.git
 cd  react-media-app
 
-
-
-
 ```
 
 ### Install Dependencies
