@@ -78,6 +78,10 @@ Client (Frontend)
 
 2.
 
+Folder Structure Example:
+
+```
+
 client/
 |
 |
