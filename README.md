@@ -1,6 +1,6 @@
 # react-media-app
 
-
+- Current project
 
 A media application that shows movies and TV series
 
@@ -30,6 +30,8 @@ Live Demo: https://react-media-app-snowy.vercel.app/
 
 ### Motivation
 
+- Personal project
+
 To create an improved movie and TV application with more features, building from the knowledge I learnt from the react-movie-application project 
  
 
@@ -42,6 +44,7 @@ To create an improved movie and TV application with more features, building from
 
 ## Project Features
 
+- Used TMDB Movie database
 - Movie and TV Series slideshows using a carousel
 - Markers that change colour to hightlight the slide on display in the carousel
 - Vertical Nav bar with icon animation CSS hover effects
