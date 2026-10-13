@@ -18,7 +18,6 @@ Live Demo: https://react-media-app-snowy.vercel.app/
 - [Installation](#installation)
 - [Environment Variables](#environment-variables)
 - [Project Features](#usage)
-- [Screenshots](#screenshots)
 - [Deployment](#deployment)
 - [Future Improvements](#future-improvements)
 - [Credits](#credits)
@@ -131,11 +130,10 @@ cd  react-media-app
 Frontend:
 
 ```bash
-cd react-media-app
 npm install
 ```
 
-### Run Development Servers
+### Run Application
 
 Frontend:
 
